@@ -160,8 +160,3 @@ As atividades do projeto são organizadas utilizando GitHub Projects, com estrut
 
 Projeto desenvolvido para a disciplina de Engenharia de Software.
 
----
-
-## Autoria
-
-Projeto desenvolvido para a disciplina de Engenharia de Software.
