@@ -36,4 +36,8 @@
 - Usuário é generalização de Aluno e Administrador
 
 ## Diagrama
+
+![Diagrama de Casos de Uso](../diagrams/diagrama1-casos-de-uso.png)
+
+## Diagrama
 Inserir aqui a imagem exportada do diagrama de casos de uso.
