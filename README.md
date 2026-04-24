@@ -22,12 +22,12 @@ Muitos estudantes enfrentam dificuldades para manter uma rotina de estudos consi
 
 O Estuda+ propõe uma abordagem ativa de acompanhamento de estudos, permitindo que o usuário:
 
-- cadastre disciplinas
-- defina metas de estudo
-- registre sessões de estudo
-- visualize seu progresso
-- acompanhe histórico de desempenho
-- receba feedback simples sobre sua evolução
+- cadastre disciplinas  
+- defina metas de estudo  
+- registre sessões de estudo  
+- visualize seu progresso  
+- acompanhe histórico de desempenho  
+- receba feedback sobre sua evolução  
 
 ---
 
@@ -41,102 +41,89 @@ O Estuda+ propõe uma abordagem ativa de acompanhamento de estudos, permitindo q
 
 Sistema web composto por:
 
-- Front-end
-- Back-end
-- Banco de dados
+- Front-end  
+- Back-end  
+- Banco de dados  
 
 ---
 
 ## Atores do Sistema
 
-- **Aluno**
-- **Administrador**
+- Aluno  
+- Administrador  
 
 ---
 
 ## Principais Funcionalidades
 
-- Cadastro de usuário
-- Login
-- Cadastro de disciplinas
-- Definição de metas de estudo
-- Registro de sessões de estudo
-- Cálculo de progresso
-- Visualização de histórico
-- Feedback de desempenho
-- Gerenciamento de usuários (Administrador)
-
----
-
-## Requisitos Funcionais
-
-1. O sistema deve permitir o cadastro de usuários.  
-2. O sistema deve permitir login de usuários.  
-3. O sistema deve permitir o cadastro de disciplinas.  
-4. O sistema deve permitir definir metas de estudo por disciplina.  
-5. O sistema deve permitir registrar sessões de estudo com duração e data.  
-6. O sistema deve calcular automaticamente o progresso do aluno em relação às metas.  
-7. O sistema deve exibir histórico de estudos.  
-8. O sistema deve permitir edição de informações.  
-9. O sistema deve permitir exclusão de registros de estudo.  
-10. O sistema deve apresentar feedback sobre o desempenho do usuário.  
-11. O sistema deve permitir ao administrador gerenciar usuários.  
-12. O sistema deve permitir ao administrador visualizar dados gerais do sistema.  
-
----
-
-## Requisitos Não Funcionais
-
-- Interface simples e intuitiva  
-- Autenticação segura  
-- Persistência de dados em banco de dados  
-- Tempo de resposta adequado  
-- Arquitetura modular  
-- Validação de entradas  
-- Consistência dos dados  
-
----
-
-## Backlog Inicial
-
-### Product Backlog
 - Cadastro de usuário  
 - Login  
-- Cadastro de disciplina  
-- Definição de meta de estudo  
-- Registro de sessão de estudo  
+- Cadastro de disciplinas  
+- Definição de metas de estudo  
+- Registro de sessões de estudo  
 - Cálculo de progresso  
 - Visualização de histórico  
 - Feedback de desempenho  
-- Painel administrativo  
 - Gerenciamento de usuários  
 
-### Sprint Atual (TO DO)
-- Criar repositório no GitHub  
-- Criar documentação inicial  
-- Definir requisitos  
-- Criar diagrama de casos de uso  
-- Configurar GitHub Projects  
-- Definir tecnologias  
+---
+
+## Requisitos
+
+Os requisitos completos do sistema estão documentados em:
+
+📎 `docs/requisitos.md`
 
 ---
 
 ## Modelagem
 
-O sistema foi modelado utilizando **diagrama de casos de uso UML**, contendo:
+O sistema foi modelado utilizando **Diagrama de Casos de Uso UML**, contemplando:
 
-- Associação entre atores e casos de uso  
-- Relacionamentos `include`  
-- Relacionamentos `extend`  
-- Generalização entre atores  
+- Associação  
+- Include  
+- Extend  
+- Generalização  
 
 Acesse:
 - `docs/casos-de-uso.md`
-- `diagramas/diagrama1-casos-de-uso.png`
+- `diagrams/diagrama1-casos-de-uso.png`
+
+---
+
+## Arquitetura do Sistema
+
+A arquitetura foi definida utilizando o modelo **C4**, permitindo visualizar o sistema em diferentes níveis de abstração.
+
+### Diagramas desenvolvidos:
+- Diagrama de Contexto  
+- Diagrama de Containers  
+- Diagrama de Componentes  
+
+Acesse:
+- `docs/arquitetura.md`
+- `diagrams/c4-contexto.png`
+- `diagrams/c4-containers.png`
+- `diagrams/c4-componentes.png`
+
+---
+
+## Tecnologias
+
+- Front-end: HTML, CSS, JavaScript  
+- Back-end: Node.js + Express  
+- Banco de dados: SQLite  
+
+---
+
+## Metodologia
+
+O projeto está sendo desenvolvido utilizando **Scrum**, com organização das tarefas por meio do **GitHub Projects**, incluindo backlog, planejamento e acompanhamento das atividades.
 
 ---
 
 ## Estrutura do Projeto
+
 
 estudamais/
 │
@@ -150,21 +137,28 @@ estudamais/
 
 ---
 
-## Tecnologias (a definir no TP2)
+## Gerenciamento do Projeto
 
-As tecnologias do sistema serão definidas na próxima etapa do projeto, com base na arquitetura escolhida.
+As atividades do projeto são organizadas utilizando GitHub Projects, com estrutura baseada em:
 
----
-
-## Metodologia
-
-O projeto será desenvolvido utilizando **Scrum**, com organização das tarefas por meio do **GitHub Projects**, incluindo backlog, tarefas e acompanhamento de progresso.
+- Backlog  
+- To Do  
+- In Progress  
+- Done  
 
 ---
 
 ## Status do Projeto
 
-Etapa atual: **TP1 – Definição do problema, requisitos e modelagem inicial**
+- TP1: Concluído  
+- TP2: Concluído  
+- TP3: Em andamento  
+
+---
+
+## Autoria
+
+Projeto desenvolvido para a disciplina de Engenharia de Software.
 
 ---
 
