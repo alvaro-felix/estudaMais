@@ -132,7 +132,7 @@ O sistema foi modelado utilizando **diagrama de casos de uso UML**, contendo:
 
 Acesse:
 - `docs/casos-de-uso.md`
-- `diagrams/diagrama1-casos-de-uso.png`
+- `diagramas/diagrama1-casos-de-uso.png`
 
 ---
 
