@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estuda+ | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="carregarDashboard()">
+  <main class="container">
+    <h1>Dashboard Estuda+</h1>
+    <p id="usuarioLogado"></p>
+
+    <section class="card">
+      <h2>Cadastrar disciplina</h2>
+      <input id="nomeDisciplina" type="text" placeholder="Nome da disciplina" />
+      <button onclick="cadastrarDisciplina()">Cadastrar disciplina</button>
+    </section>
+
+    <section class="card">
+      <h2>Registrar sessão de estudo</h2>
+      <select id="disciplinaSelect"></select>
+      <input id="dataSessao" type="date" />
+      <input id="duracaoSessao" type="number" placeholder="Duração em minutos" />
+      <input id="descricaoSessao" type="text" placeholder="Descrição do estudo" />
+      <button onclick="registrarSessao()">Registrar sessão</button>
+    </section>
+
+    <section class="card">
+      <h2>Sessões cadastradas</h2>
+      <ul id="listaSessoes"></ul>
+    </section>
+
+    <button class="secundario" onclick="sair()">Sair</button>
+    <p id="mensagem"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
