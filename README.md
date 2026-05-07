@@ -151,10 +151,38 @@ As atividades do projeto são organizadas utilizando GitHub Projects, com estrut
 ## Status do Projeto
 
 - TP1: Concluído  
-- TP2: Concluído  
-- TP3: Em andamento  
+- TP2: Concluído 
+ 
+## TP3 – Sprint de Desenvolvimento
 
----
+Nesta etapa foi desenvolvida a primeira versão funcional do sistema Estuda+, conforme o planejamento definido nas etapas anteriores.
+
+O entregável atual contempla um MVP funcional com integração entre front-end, back-end e banco de dados.
+
+### Funcionalidades implementadas
+
+- Cadastro de usuário
+- Login de usuário
+- Cadastro de disciplinas
+- Listagem de disciplinas
+- Registro de sessões de estudo
+- Listagem de sessões cadastradas
+- Integração entre front-end e back-end
+- Persistência de dados com SQLite
+
+### Estrutura implementada
+
+- `Frontend/`: telas do sistema e integração com a API
+- `Backend/`: servidor Node.js, rotas da API e conexão com banco SQLite
+- `docs/`: documentação do projeto
+- `diagrams/`: diagramas do sistema
+- `videos/`: vídeo da entrega
+
+### Status da entrega
+
+O sistema já possui um fluxo funcional mínimo, permitindo que o usuário crie uma conta, realize login, cadastre disciplinas e registre sessões de estudo.
+
+As funcionalidades de metas, cálculo de progresso, feedback de desempenho e painel administrativo permanecem no backlog para evolução nas próximas sprints.
 
 ## Autoria
 
