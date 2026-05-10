@@ -2,4 +2,4 @@
 
 Link do vídeo demonstrando o estado atual da solução:
 
-[https://youtu.be/20wACecRomo]
+[https://youtu.be/r9ZQOggLfdI]
