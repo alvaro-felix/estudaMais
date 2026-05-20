@@ -7,10 +7,19 @@ function mostrarMensagem(texto) {
   }
 }
 
+function campoVazio(valor) {
+  return !valor || valor.trim() === "";
+}
+
 async function cadastrarUsuario() {
   const nome = document.getElementById("cadastroNome").value;
   const email = document.getElementById("cadastroEmail").value;
   const senha = document.getElementById("cadastroSenha").value;
+
+  if (campoVazio(nome) || campoVazio(email) || campoVazio(senha)) {
+    mostrarMensagem("Preencha nome, e-mail e senha para realizar o cadastro.");
+    return;
+  }
 
   try {
     const resposta = await fetch(`${API_URL}/usuarios`, {
@@ -18,7 +27,11 @@ async function cadastrarUsuario() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ nome, email, senha })
+      body: JSON.stringify({
+        nome: nome.trim(),
+        email: email.trim(),
+        senha: senha.trim()
+      })
     });
 
     const dados = await resposta.json();
@@ -29,6 +42,10 @@ async function cadastrarUsuario() {
     }
 
     mostrarMensagem("Usuário cadastrado com sucesso. Faça login para continuar.");
+
+    document.getElementById("cadastroNome").value = "";
+    document.getElementById("cadastroEmail").value = "";
+    document.getElementById("cadastroSenha").value = "";
   } catch (erro) {
     mostrarMensagem("Erro ao conectar com o servidor.");
   }
@@ -38,13 +55,21 @@ async function login() {
   const email = document.getElementById("loginEmail").value;
   const senha = document.getElementById("loginSenha").value;
 
+  if (campoVazio(email) || campoVazio(senha)) {
+    mostrarMensagem("Preencha e-mail e senha para realizar o login.");
+    return;
+  }
+
   try {
     const resposta = await fetch(`${API_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ email, senha })
+      body: JSON.stringify({
+        email: email.trim(),
+        senha: senha.trim()
+      })
     });
 
     const dados = await resposta.json();
@@ -79,6 +104,11 @@ async function cadastrarDisciplina() {
   const usuario = JSON.parse(localStorage.getItem("usuario"));
   const nome = document.getElementById("nomeDisciplina").value;
 
+  if (campoVazio(nome)) {
+    mostrarMensagem("Informe o nome da disciplina.");
+    return;
+  }
+
   try {
     const resposta = await fetch(`${API_URL}/disciplinas`, {
       method: "POST",
@@ -86,7 +116,7 @@ async function cadastrarDisciplina() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        nome,
+        nome: nome.trim(),
         usuario_id: usuario.id
       })
     });
@@ -118,6 +148,14 @@ async function carregarDisciplinas() {
 
     select.innerHTML = "";
 
+    if (disciplinas.length === 0) {
+      const option = document.createElement("option");
+      option.value = "";
+      option.textContent = "Nenhuma disciplina cadastrada";
+      select.appendChild(option);
+      return;
+    }
+
     disciplinas.forEach((disciplina) => {
       const option = document.createElement("option");
       option.value = disciplina.id;
@@ -135,6 +173,21 @@ async function registrarSessao() {
   const duracao = document.getElementById("duracaoSessao").value;
   const descricao = document.getElementById("descricaoSessao").value;
 
+  if (campoVazio(disciplina_id)) {
+    mostrarMensagem("Cadastre ou selecione uma disciplina antes de registrar a sessão.");
+    return;
+  }
+
+  if (campoVazio(data) || campoVazio(duracao)) {
+    mostrarMensagem("Informe a data e a duração da sessão de estudo.");
+    return;
+  }
+
+  if (Number(duracao) <= 0) {
+    mostrarMensagem("A duração da sessão deve ser maior que zero.");
+    return;
+  }
+
   try {
     const resposta = await fetch(`${API_URL}/sessoes`, {
       method: "POST",
@@ -145,7 +198,7 @@ async function registrarSessao() {
         disciplina_id,
         data,
         duracao,
-        descricao
+        descricao: descricao.trim()
       })
     });
 
@@ -176,6 +229,13 @@ async function carregarSessoes() {
     const sessoes = await resposta.json();
 
     lista.innerHTML = "";
+
+    if (sessoes.length === 0) {
+      const item = document.createElement("li");
+      item.textContent = "Nenhuma sessão de estudo cadastrada.";
+      lista.appendChild(item);
+      return;
+    }
 
     sessoes.forEach((sessao) => {
       const item = document.createElement("li");

@@ -23,11 +23,10 @@ Muitos estudantes enfrentam dificuldades para manter uma rotina de estudos consi
 O Estuda+ propõe uma abordagem ativa de acompanhamento de estudos, permitindo que o usuário:
 
 - cadastre disciplinas  
-- defina metas de estudo  
 - registre sessões de estudo  
-- visualize seu progresso  
-- acompanhe histórico de desempenho  
-- receba feedback sobre sua evolução  
+- acompanhe sua rotina acadêmica  
+- organize melhor seus estudos  
+- acompanhe sua evolução ao longo do tempo  
 
 ---
 
@@ -56,11 +55,18 @@ Sistema web composto por:
 
 ## Principais Funcionalidades
 
+### Funcionalidades implementadas no MVP
+
 - Cadastro de usuário  
 - Login  
 - Cadastro de disciplinas  
-- Definição de metas de estudo  
+- Listagem de disciplinas  
 - Registro de sessões de estudo  
+- Listagem de sessões cadastradas  
+
+### Funcionalidades planejadas para próximas sprints
+
+- Definição de metas de estudo  
 - Cálculo de progresso  
 - Visualização de histórico  
 - Feedback de desempenho  
@@ -86,6 +92,7 @@ O sistema foi modelado utilizando **Diagrama de Casos de Uso UML**, contemplando
 - Generalização  
 
 Acesse:
+
 - `docs/casos-de-uso.md`
 - `diagrams/diagrama1-casos-de-uso.png`
 
@@ -95,12 +102,14 @@ Acesse:
 
 A arquitetura foi definida utilizando o modelo **C4**, permitindo visualizar o sistema em diferentes níveis de abstração.
 
-### Diagramas desenvolvidos:
+### Diagramas desenvolvidos
+
 - Diagrama de Contexto  
 - Diagrama de Containers  
 - Diagrama de Componentes  
 
 Acesse:
+
 - `docs/arquitetura.md`
 - `diagrams/c4-contexto.png`
 - `diagrams/c4-containers.png`
@@ -110,7 +119,7 @@ Acesse:
 
 ## Tecnologias
 
-- Front-end: HTML, CSS, JavaScript  
+- Front-end: HTML, CSS e JavaScript  
 - Back-end: Node.js + Express  
 - Banco de dados: SQLite  
 
@@ -124,16 +133,16 @@ O projeto está sendo desenvolvido utilizando **Scrum**, com organização das t
 
 ## Estrutura do Projeto
 
-
-estudamais/
+```txt
+estudaMais/
 │
 ├── README.md
 ├── docs/
 ├── diagrams/
-├── frontend/
-├── backend/
-├── Videos/
-
+├── Frontend/
+├── Backend/
+├── videos/
+```
 
 ---
 
@@ -151,8 +160,12 @@ As atividades do projeto são organizadas utilizando GitHub Projects, com estrut
 ## Status do Projeto
 
 - TP1: Concluído  
-- TP2: Concluído 
- 
+- TP2: Concluído  
+- TP3: Concluído  
+- TP4: Em desenvolvimento  
+
+---
+
 ## TP3 – Sprint de Desenvolvimento
 
 Nesta etapa foi desenvolvida a primeira versão funcional do sistema Estuda+, conforme o planejamento definido nas etapas anteriores.
@@ -161,22 +174,22 @@ O entregável atual contempla um MVP funcional com integração entre front-end,
 
 ### Funcionalidades implementadas
 
-- Cadastro de usuário
-- Login de usuário
-- Cadastro de disciplinas
-- Listagem de disciplinas
-- Registro de sessões de estudo
-- Listagem de sessões cadastradas
-- Integração entre front-end e back-end
-- Persistência de dados com SQLite
+- Cadastro de usuário  
+- Login de usuário  
+- Cadastro de disciplinas  
+- Listagem de disciplinas  
+- Registro de sessões de estudo  
+- Listagem de sessões cadastradas  
+- Integração entre front-end e back-end  
+- Persistência de dados com SQLite  
 
 ### Estrutura implementada
 
-- `Frontend/`: telas do sistema e integração com a API
-- `Backend/`: servidor Node.js, rotas da API e conexão com banco SQLite
-- `docs/`: documentação do projeto
-- `diagrams/`: diagramas do sistema
-- `videos/`: vídeo da entrega
+- `Frontend/`: telas do sistema e integração com a API  
+- `Backend/`: servidor Node.js, rotas da API e conexão com banco SQLite  
+- `docs/`: documentação do projeto  
+- `diagrams/`: diagramas do sistema  
+- `videos/`: vídeo da entrega  
 
 ### Status da entrega
 
@@ -184,7 +197,26 @@ O sistema já possui um fluxo funcional mínimo, permitindo que o usuário crie 
 
 As funcionalidades de metas, cálculo de progresso, feedback de desempenho e painel administrativo permanecem no backlog para evolução nas próximas sprints.
 
+---
+
+## TP4 – Plano de Testes
+
+Nesta etapa foi elaborado o plano de testes do sistema Estuda+, com foco na validação das funcionalidades essenciais implementadas no MVP.
+
+O plano contempla testes funcionais relacionados aos principais casos de uso do sistema, incluindo cadastro de usuário, login, cadastro de disciplinas, listagem de disciplinas, registro de sessões de estudo e listagem de sessões cadastradas.
+
+### Artefatos produzidos
+
+- Plano de testes documentado em `docs/plano-de-testes.md`
+- Casos de teste organizados por caso de uso
+- Planejamento da próxima sprint no GitHub Projects
+
+### Status da entrega
+
+TP4 em desenvolvimento.
+
+---
+
 ## Autoria
 
 Projeto desenvolvido para a disciplina de Engenharia de Software.
-
