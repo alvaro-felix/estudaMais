@@ -22,11 +22,11 @@ Muitos estudantes enfrentam dificuldades para manter uma rotina de estudos consi
 
 O Estuda+ propõe uma abordagem ativa de acompanhamento de estudos, permitindo que o usuário:
 
-- cadastre disciplinas  
-- registre sessões de estudo  
-- acompanhe sua rotina acadêmica  
-- organize melhor seus estudos  
-- acompanhe sua evolução ao longo do tempo  
+* cadastre disciplinas
+* registre sessões de estudo
+* acompanhe sua rotina acadêmica
+* organize melhor seus estudos
+* acompanhe sua evolução ao longo do tempo
 
 ---
 
@@ -40,16 +40,16 @@ O Estuda+ propõe uma abordagem ativa de acompanhamento de estudos, permitindo q
 
 Sistema web composto por:
 
-- Front-end  
-- Back-end  
-- Banco de dados  
+* Front-end
+* Back-end
+* Banco de dados
 
 ---
 
 ## Atores do Sistema
 
-- Aluno  
-- Administrador  
+* Aluno
+* Administrador
 
 ---
 
@@ -57,20 +57,20 @@ Sistema web composto por:
 
 ### Funcionalidades implementadas no MVP
 
-- Cadastro de usuário  
-- Login  
-- Cadastro de disciplinas  
-- Listagem de disciplinas  
-- Registro de sessões de estudo  
-- Listagem de sessões cadastradas  
+* Cadastro de usuário
+* Login
+* Cadastro de disciplinas
+* Listagem de disciplinas
+* Registro de sessões de estudo
+* Listagem de sessões cadastradas
 
 ### Funcionalidades planejadas para próximas sprints
 
-- Definição de metas de estudo  
-- Cálculo de progresso  
-- Visualização de histórico  
-- Feedback de desempenho  
-- Gerenciamento de usuários  
+* Definição de metas de estudo
+* Cálculo de progresso
+* Visualização de histórico
+* Feedback de desempenho
+* Gerenciamento de usuários
 
 ---
 
@@ -86,15 +86,15 @@ Os requisitos completos do sistema estão documentados em:
 
 O sistema foi modelado utilizando **Diagrama de Casos de Uso UML**, contemplando:
 
-- Associação  
-- Include  
-- Extend  
-- Generalização  
+* Associação
+* Include
+* Extend
+* Generalização
 
 Acesse:
 
-- `docs/casos-de-uso.md`
-- `diagrams/diagrama1-casos-de-uso.png`
+* `docs/casos-de-uso.md`
+* `diagrams/diagrama1-casos-de-uso.png`
 
 ---
 
@@ -104,24 +104,24 @@ A arquitetura foi definida utilizando o modelo **C4**, permitindo visualizar o s
 
 ### Diagramas desenvolvidos
 
-- Diagrama de Contexto  
-- Diagrama de Containers  
-- Diagrama de Componentes  
+* Diagrama de Contexto
+* Diagrama de Containers
+* Diagrama de Componentes
 
 Acesse:
 
-- `docs/arquitetura.md`
-- `diagrams/c4-contexto.png`
-- `diagrams/c4-containers.png`
-- `diagrams/c4-componentes.png`
+* `docs/arquitetura.md`
+* `diagrams/c4-contexto.png`
+* `diagrams/c4-containers.png`
+* `diagrams/c4-componentes.png`
 
 ---
 
 ## Tecnologias
 
-- Front-end: HTML, CSS e JavaScript  
-- Back-end: Node.js + Express  
-- Banco de dados: SQLite  
+* Front-end: HTML, CSS e JavaScript
+* Back-end: Node.js + Express
+* Banco de dados: SQLite
 
 ---
 
@@ -150,19 +150,20 @@ estudaMais/
 
 As atividades do projeto são organizadas utilizando GitHub Projects, com estrutura baseada em:
 
-- Backlog  
-- To Do  
-- In Progress  
-- Done  
+* Backlog
+* To Do
+* In Progress
+* Done
 
 ---
 
 ## Status do Projeto
 
-- TP1: Concluído  
-- TP2: Concluído  
-- TP3: Concluído  
-- TP4: Em desenvolvimento  
+* TP1: Concluído
+* TP2: Concluído
+* TP3: Concluído
+* TP4: Concluído
+* TP5: Em desenvolvimento
 
 ---
 
@@ -174,22 +175,22 @@ O entregável atual contempla um MVP funcional com integração entre front-end,
 
 ### Funcionalidades implementadas
 
-- Cadastro de usuário  
-- Login de usuário  
-- Cadastro de disciplinas  
-- Listagem de disciplinas  
-- Registro de sessões de estudo  
-- Listagem de sessões cadastradas  
-- Integração entre front-end e back-end  
-- Persistência de dados com SQLite  
+* Cadastro de usuário
+* Login de usuário
+* Cadastro de disciplinas
+* Listagem de disciplinas
+* Registro de sessões de estudo
+* Listagem de sessões cadastradas
+* Integração entre front-end e back-end
+* Persistência de dados com SQLite
 
 ### Estrutura implementada
 
-- `Frontend/`: telas do sistema e integração com a API  
-- `Backend/`: servidor Node.js, rotas da API e conexão com banco SQLite  
-- `docs/`: documentação do projeto  
-- `diagrams/`: diagramas do sistema  
-- `videos/`: vídeo da entrega  
+* `Frontend/`: telas do sistema e integração com a API
+* `Backend/`: servidor Node.js, rotas da API e conexão com banco SQLite
+* `docs/`: documentação do projeto
+* `diagrams/`: diagramas do sistema
+* `videos/`: vídeo da entrega
 
 ### Status da entrega
 
@@ -207,13 +208,45 @@ O plano contempla testes funcionais relacionados aos principais casos de uso do 
 
 ### Artefatos produzidos
 
-- Plano de testes documentado em `docs/plano-de-testes.md`
-- Casos de teste organizados por caso de uso
-- Planejamento da próxima sprint no GitHub Projects
+* Plano de testes documentado em `docs/plano-de-testes.md`
+* Casos de teste organizados por caso de uso
+* Planejamento da próxima sprint no GitHub Projects
 
 ### Status da entrega
 
-TP4 em desenvolvimento.
+TP4 concluído. O plano de testes foi elaborado e documentado, servindo como base para a execução dos testes realizados no TP5.
+
+---
+
+## TP5 – Execução dos Testes
+
+Nesta etapa foram executados os casos de teste planejados no TP4, com o objetivo de validar o funcionamento das funcionalidades implementadas no MVP do sistema Estuda+.
+
+Os testes foram realizados manualmente e contemplaram os principais fluxos da aplicação, incluindo cadastro de usuários, autenticação, cadastro de disciplinas, listagem de disciplinas, registro de sessões de estudo e consulta das sessões cadastradas.
+
+### Atividades realizadas
+
+* Execução dos casos de teste definidos no plano de testes
+* Registro dos resultados obtidos
+* Identificação de oportunidades de melhoria
+* Atualização da documentação do projeto
+* Planejamento das próximas atividades no GitHub Projects
+
+### Artefatos produzidos
+
+* Atualização do documento `docs/plano-de-testes.md` com os resultados da execução dos testes
+* Atualização do GitHub Projects
+* Vídeo demonstrando a execução dos testes e o estado atual do sistema
+
+### Resultados
+
+A maior parte dos casos de teste foi aprovada, confirmando o correto funcionamento das funcionalidades essenciais do MVP.
+
+Durante a execução dos testes foi identificada uma oportunidade de melhoria relacionada ao tratamento de disciplinas duplicadas, que permanecerá registrada para evolução nas próximas sprints.
+
+### Status da entrega
+
+TP5 em desenvolvimento.
 
 ---
 
